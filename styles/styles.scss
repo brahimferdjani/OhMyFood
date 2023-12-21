@@ -22,7 +22,7 @@
             display: flex;
             justify-content: center;
             padding: 15px 119px;
-            box-shadow: $colorGrey 0px 2px 6px 0px inset;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)inset;
 
             .fa-solid .fa-location-dot {
                 font-size: 2em;
@@ -265,6 +265,7 @@
     
                                 display: flex;
                                 justify-content: space-between;
+                                align-items: center;
                                 padding: 12px 16px;
                                 position: relative;
     
