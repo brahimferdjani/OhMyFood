@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+* header {
+  display: flex;
+  flex-direction: column;
+}
+* header .logoHeader {
+  max-width: 162px;
+  margin: 14px auto;
+}
+* header .localisation {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  padding: 15px 119px;
+  box-shadow: #353535 0px 2px 6px 0px inset;
+}
+* header .localisation .fa-solid .fa-location-dot {
+  font-size: 2em;
+}
+* header .localisation .input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+}
+* header .localisation .input::placeholder {
+  color: black;
+}
+* main .rectangleOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+* main .rectangleOne h1 {
+  padding: 39px 42px 0 58px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 426px) and (max-width: 1440px) {
+  * main .rectangleOne h1 {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+  }
+}
+* main .rectangleOne p {
+  padding: 12px 26px 27px 34px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 426px) and (max-width: 1440px) {
+  * main .rectangleOne p {
+    padding-top: 0px;
+    padding-bottom: 18px;
+  }
+}
+* main .rectangleOne button {
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  min-width: 218px;
+  min-height: 50px;
+  font-size: 16px;
+  border: none;
+  padding: 13px 18.75px;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  transition: 0.5s opacity;
+}
+* main .rectangleOne button:hover {
+  opacity: 0.8;
+}
+@media (min-width: 426px) and (max-width: 1440px) {
+  * main .rectangleOne button {
+    margin-bottom: 30px;
+  }
+}
+* main .rectangleTwo .two {
+  padding: 50px 20px;
+}
+@media (min-width: 635px) and (max-width: 1440px) {
+  * main .rectangleTwo .two {
+    padding: 50px 180px;
+  }
+}
+* main .rectangleTwo .two h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+* main .rectangleTwo .two .boxe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1179px) and (max-width: 1440px) {
+  * main .rectangleTwo .two .boxe {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+* main .rectangleTwo .two .boxe .boxes {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 100%;
+  margin-bottom: 24.92px;
+  padding: 28px 30px;
+  border: 1px solid #F6F6F6;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+* main .rectangleTwo .two .boxe .boxes .number {
+  position: absolute;
+  border-radius: 20px;
+  bottom: 27px;
+  left: -10px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+}
+* main .rectangleTwo .two .boxe .boxes .fa-solid {
+  font-size: large;
+  color: #7E7E7E;
+}
+* main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
+  color: #9356DC;
+}
+@media (min-width: 426px) and (max-width: 1440px) {
+  * main .rectangleTwo .two .boxe .boxes .fa-solid {
+    text-align: center;
+  }
+}
+* main .rectangleTwo .two .boxe .boxes p {
+  text-align: left;
+  font-size: 16px;
+}
+@media (min-width: 426px) and (max-width: 1440px) {
+  * main .rectangleTwo .two .boxe .boxes {
+    gap: 15px;
+  }
+}
+* .rectangleThree {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 20px;
+  background-color: #F6F6F6;
+}
+@media (min-width: 828px) and (max-width: 1440px) {
+  * .rectangleThree .three {
+    padding: 50px 180px;
+  }
+}
+@media (min-width: 828px) and (max-width: 1440px) {
+  * .rectangleThree .three {
+    padding: 0 180px;
+    margin-bottom: 30px;
+  }
+}
+* .rectangleThree .three h1 {
+  padding: 54px 0 26px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (min-width: 828px) and (max-width: 1440px) {
+  * .rectangleThree .three h1 {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 828px) and (max-width: 1440px) {
+  * .rectangleThree .three .restau {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+}
+* .rectangleThree .three .restau a {
+  text-decoration: none;
+  color: black;
+}
+* .rectangleThree .three .restau a article {
+  background-color: white;
+  height: 100%;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+@media (min-width: 828px) and (max-width: 1440px) {
+  * .rectangleThree .three .restau a article {
+    min-width: 162px;
+  }
+}
+* .rectangleThree .three .restau a article img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+* .rectangleThree .three .restau a article .images {
+  position: relative;
+}
+* .rectangleThree .three .restau a article .images p {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 7px 9px;
+  background-color: #99e2d0;
+}
+* .rectangleThree .three .restau a article .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+* .rectangleThree .three .restau a article .content .description h2 {
+  font-size: 18px;
+}
+* .rectangleThree .three .restau a article .content .description p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-size: 17px;
+}
+* .rectangleThree .three .restau a article .content .heart {
+  stroke-width: 0.1em;
+}
+* .rectangleThree .three .restau a article .content .heart:active {
+  display: none;
+}
+* .rectangleThree .three .restau a article .content .heart:active + .fill {
+  display: block;
+}
+* .rectangleThree .three .restau a article .content .fill {
+  display: none;
+}
+* footer {
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer {
+    padding: 30px 25px;
+    padding-top: 70px;
+  }
+}
+* footer img {
+  max-width: 162px;
+  padding-bottom: 5px;
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer img {
+    float: right;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer .infos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+    justify-content: flex-end;
+  }
+}
+* footer .infos .sousinfos {
+  display: grid;
+  grid-template-columns: 15px auto;
+  column-gap: 15px;
+}
+* footer div,
+* footer p {
+  padding-bottom: 2px;
+}
+
+.boxe2 {
+  padding: 10px;
+  background-color: #353535;
+}
+.boxe2 .boxeContent {
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  height: 65.8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.boxe2 .boxeContent .repas h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  /* ellipsis works with overflow hidden */
+  overflow: hidden;
+  /* ellipsis works with overflow hidden */
+  white-space: nowrap;
+  transition: width 1s;
+}
+.boxe2 .boxeContent .repas p {
+  text-overflow: ellipsis;
+  /* ellipsis works with overflow hidden */
+  overflow: hidden;
+  /* ellipsis works with overflow hidden */
+  font-size: 15.043px;
+  transition: width 1s;
+}
+.boxe2 .boxeContent .repas p span {
+  float: right;
+}
+.boxe2 .boxeContent:hover .check {
+  right: 0;
+}
+.boxe2 .boxeContent:hover h2 {
+  width: calc(100% - 80px);
+}
+.boxe2 .boxeContent:hover p {
+  width: calc(100% - 80px);
+}
+.boxe2 .check {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  background-color: red;
+  width: 80px;
+  height: 65.8px;
+  transition: right 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxe2 .check .fa-check {
+  color: white;
+  font-size: 2em;
+}/*# sourceMappingURL=styles.css.map */

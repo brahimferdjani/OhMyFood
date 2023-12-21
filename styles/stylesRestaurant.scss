@@ -1,0 +1,280 @@
+@import "sassstyles";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontText;
+
+    h1 {
+        font-family: $fontTitle;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-family: $fontText;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-family: $fontText;
+        font-weight: 500;
+        padding-bottom: 3px;
+    }
+
+    p {
+        font-size: 15.043px;
+        font-family: $fontText;
+        font-weight: 300;
+    }
+
+    header {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        a {
+
+            text-decoration: none;
+            color: black;
+
+            .fa-arrow-left {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+            }
+
+        }
+
+        .logoHeader {
+            max-width: 162px;
+            margin: 14px auto;
+        }
+
+    }
+
+    main {
+
+        position: relative;
+
+        img {
+
+            width: 100%;
+            height: 231px;
+            object-fit: cover;
+
+            @media (min-width: 884px) and (max-width: 2000px) {
+                object-fit:cover;
+                height: 300px;
+            }
+
+        }
+
+        section {
+
+            .background {
+                background-color: #F6F6F6;
+                width: 100%;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                position: absolute;
+                top: 200px;
+
+                @media (min-width: 1300px) and (max-width: 2000px) {
+                    width: 70%;
+                    left: 200px;
+                }
+
+                .title {
+                    padding: 32px 17px 0 17px;
+                    display: grid;
+                    grid-template-columns: 1fr 100px;
+                    margin-bottom: 40px;
+
+                    @media (min-width: 1309px) and (max-width: 2000px) {
+                        display: grid;
+                        grid-template-columns: 30% 5%;
+                        justify-content: center;
+                    }
+
+                    svg {
+                        justify-self: center;
+                        align-self: center;
+                    }
+
+                    .fill {
+                        display: none;
+                    }
+
+                    .heart:active {
+                        display: none;
+                    }
+
+                    .heart:active+.fill {
+                        display: block;
+                        fill: red;
+                    }
+                }
+
+                article {
+                    padding: 0 10px;
+                    display: grid;
+                    grid-template-rows: repeat(4, auto);
+                    row-gap: 12px;
+                    margin-bottom: 40px;
+
+                    @media (min-width: 1309px) and (max-width: 2000px) {
+                        display: grid;
+                        grid-template-columns: 50%;
+                        justify-content: center;
+                    }
+        
+                    h2 {
+                        padding-bottom: 5px;
+                        border-bottom: 3px solid $colorLightGreen;
+                        width: 40px;
+                    }
+        
+                    .boxeContent {
+                        position: relative;
+                        padding: 15px;
+                        background-color: white;
+                        height: 65.8px;
+                        border-radius: 20px;
+                        overflow: hidden;
+        
+                        .repas {
+        
+                            h2 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                text-overflow: ellipsis;
+                                /* ellipsis works with overflow hidden */
+                                overflow: hidden;
+                                /* ellipsis works with overflow hidden */
+                                white-space: nowrap;
+                                transition: width 1s;
+                            }
+        
+                            p {
+                                text-overflow: ellipsis;
+                                /* ellipsis works with overflow hidden */
+                                overflow: hidden;
+                                /* ellipsis works with overflow hidden */
+                                font-size: 15.043px;
+                                transition: width 1s;
+        
+                                span {
+                                    float: right;
+                                }
+                            }
+                        }
+        
+                        &:hover {
+                            // <-- ça c'est boxeContent, quand il est hover
+        
+                            .check {
+                                // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
+                                right: 0;
+                            }
+        
+                            h2 {
+                                width: calc(100% - 80px);
+                            }
+        
+                            p {
+                                width: calc(100% - 80px);
+                            }
+                        }
+        
+        
+                    }
+        
+                    .check {
+                        position: absolute;
+                        top: 0;
+                        right: -80px;
+                        background-color: $colorLightGreen;
+                        width: 80px;
+                        height: 65.8px;
+                        transition: right 1s;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .fa-check {
+                            color: white;
+                            font-size: 2em;
+        
+                        }
+                    }
+                }
+
+                button {
+                    display: block;
+                    @include boutton;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    transition: 0.5s opacity;
+    
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }    
+
+        }
+    }
+
+
+    footer {
+
+        width: 100%;
+        position: absolute;
+        top: 1360px;
+        padding: 22px 25px;
+        background-color: $colorGrey;
+        color: white;
+    
+        @media (min-width: 884px) and (max-width: 2000px) {
+            padding: 30px 25px;
+            padding-top: 70px;
+        }
+    
+        img {
+            max-width: 162px;
+            padding-bottom: 5px;
+    
+            @media (min-width: 884px) and (max-width: 2000px) {
+                float: right;
+                margin-left: 80px;
+            }
+        }
+    
+        .infos {
+    
+            @media (min-width: 884px) and (max-width: 2000px) {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                column-gap: 20px;
+                justify-content: flex-end;
+            }
+    
+            .sousinfos {
+                display: grid;
+                grid-template-columns: 15px auto;
+                column-gap: 15px;
+            }
+        }
+    
+        div,
+        p {
+            padding-bottom: 2px;
+        }
+    }
+}

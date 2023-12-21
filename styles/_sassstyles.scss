@@ -1,0 +1,48 @@
+
+$fontTitle : Shrikhand ;
+$fontText : Roboto ;
+
+$colorLightGreen : #99e2d0;
+$colorDarkGreen : #eafbff;
+$colorLightBlue : #89c8fa ;
+$colorDarkBlue : #c5e2f8;
+$colorPurple : #9356DC;
+$colorGrey : #353535;
+$colorLightGrey : #F6F6F6;
+
+@mixin gradient ($colorOne, $colorTwo) {
+    background-image: linear-gradient(to top, $colorOne, $colorTwo);
+}
+
+@mixin font-title {
+    font-family: $fontText;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin font-text {
+    font-family: $fontText;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@mixin boutton {
+    @include gradient( #9356DC, #FF79DA );
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    min-width: 218px;
+    min-height: 50px;
+    font-size: 16px;
+    border: none;
+    padding: 13px 18.75px;
+    color: white;
+}
+
+@mixin logo {
+    min-width: 5px;
+    max-width: 20px;
+    display: block;
+    margin: o auto;
+    padding: 0px 19px 0px 16px;
+}
+

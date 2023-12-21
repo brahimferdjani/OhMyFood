@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+* h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+}
+* h2 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+* h3 {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding-bottom: 3px;
+}
+* p {
+  font-size: 15.043px;
+  font-family: Roboto;
+  font-weight: 300;
+}
+* header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+* header a {
+  text-decoration: none;
+  color: black;
+}
+* header a .fa-arrow-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+* header .logoHeader {
+  max-width: 162px;
+  margin: 14px auto;
+}
+* main {
+  position: relative;
+}
+* main img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * main img {
+    object-fit: cover;
+    height: 300px;
+  }
+}
+* main section .background {
+  background-color: #F6F6F6;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+  top: 200px;
+}
+@media (min-width: 1300px) and (max-width: 2000px) {
+  * main section .background {
+    width: 70%;
+    left: 200px;
+  }
+}
+* main section .background .title {
+  padding: 32px 17px 0 17px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1309px) and (max-width: 2000px) {
+  * main section .background .title {
+    display: grid;
+    grid-template-columns: 30% 5%;
+    justify-content: center;
+  }
+}
+* main section .background .title svg {
+  justify-self: center;
+  align-self: center;
+}
+* main section .background .title .fill {
+  display: none;
+}
+* main section .background .title .heart:active {
+  display: none;
+}
+* main section .background .title .heart:active + .fill {
+  display: block;
+  fill: red;
+}
+* main section .background article {
+  padding: 0 10px;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 12px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1309px) and (max-width: 2000px) {
+  * main section .background article {
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
+}
+* main section .background article h2 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+}
+* main section .background article .boxeContent {
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  height: 65.8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+* main section .background article .boxeContent .repas h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  /* ellipsis works with overflow hidden */
+  overflow: hidden;
+  /* ellipsis works with overflow hidden */
+  white-space: nowrap;
+  transition: width 1s;
+}
+* main section .background article .boxeContent .repas p {
+  text-overflow: ellipsis;
+  /* ellipsis works with overflow hidden */
+  overflow: hidden;
+  /* ellipsis works with overflow hidden */
+  font-size: 15.043px;
+  transition: width 1s;
+}
+* main section .background article .boxeContent .repas p span {
+  float: right;
+}
+* main section .background article .boxeContent:hover .check {
+  right: 0;
+}
+* main section .background article .boxeContent:hover h2 {
+  width: calc(100% - 80px);
+}
+* main section .background article .boxeContent:hover p {
+  width: calc(100% - 80px);
+}
+* main section .background article .check {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 65.8px;
+  transition: right 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* main section .background article .check .fa-check {
+  color: white;
+  font-size: 2em;
+}
+* main section .background button {
+  display: block;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  min-width: 218px;
+  min-height: 50px;
+  font-size: 16px;
+  border: none;
+  padding: 13px 18.75px;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  transition: 0.5s opacity;
+}
+* main section .background button:hover {
+  opacity: 0.8;
+}
+* footer {
+  width: 100%;
+  position: absolute;
+  top: 1360px;
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer {
+    padding: 30px 25px;
+    padding-top: 70px;
+  }
+}
+* footer img {
+  max-width: 162px;
+  padding-bottom: 5px;
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer img {
+    float: right;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 884px) and (max-width: 2000px) {
+  * footer .infos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+    justify-content: flex-end;
+  }
+}
+* footer .infos .sousinfos {
+  display: grid;
+  grid-template-columns: 15px auto;
+  column-gap: 15px;
+}
+* footer div,
+* footer p {
+  padding-bottom: 2px;
+}/*# sourceMappingURL=stylesRestaurant.css.map */

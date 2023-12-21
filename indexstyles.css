@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .localisation .logoHeader {
+  min-width: 10px;
+  max-width: 20px;
+  display: block;
+  margin: o auto;
+  padding: 0px 19px 0px 16px;
+}
+header .localisation .fa-location-dot {
+  font-size: 2em;
+}/*# sourceMappingURL=indexstyles.css.map */
