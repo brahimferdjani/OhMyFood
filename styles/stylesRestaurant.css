@@ -149,7 +149,7 @@ main section .background article .boxeContent .repas .menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  transition: width 1s;
+  transition: width 0.85s;
 }
 main section .background article .boxeContent .repas .menu .recipe {
   text-overflow: ellipsis;
@@ -159,34 +159,35 @@ main section .background article .boxeContent .repas .menu .recipe {
   white-space: nowrap;
   font-size: 15.043px;
 }
-main section .background article .boxeContent .repas .menu .recipe .prix {
-  float: right;
+main section .background article .boxeContent .repas .menu .prix {
+  font-weight: 500;
 }
 main section .background article .boxeContent:hover .check {
   right: 0;
 }
 main section .background article .boxeContent:hover h3 {
-  width: calc(100% - 80px);
+  width: calc(100% - 55px);
 }
 main section .background article .boxeContent:hover .menu {
-  width: calc(100% - 80px);
+  width: calc(100% - 55px);
 }
 main section .background .check {
   position: absolute;
   top: 0;
   right: -80px;
   background-color: #99e2d0;
-  width: 80px;
-  height: 65.8px;
-  transition: right 1s;
+  width: 59px;
+  height: 69px;
+  transition: right 0.7s;
+  fill: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main section .background .check .fa-check {
-  color: white;
-  font-size: 2em;
+main section .background .check svg {
+  width: 20px;
+  height: 20px;
 }
 main section button {
   display: block;

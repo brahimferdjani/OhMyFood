@@ -170,7 +170,7 @@ main {
                             display: flex;
                             justify-content: space-between;
                             width: 100%;
-                            transition: width 1s;
+                            transition: width .85s;
 
                             .recipe {
                                 text-overflow: ellipsis;
@@ -179,11 +179,9 @@ main {
                                 /* ellipsis works with overflow hidden */
                                 white-space: nowrap;
                                 font-size: 15.043px;
-
-                                .prix {
-                                    float: right;
-                                }
                             }
+
+                            .prix {font-weight: 500;}
                         }
 
                     }
@@ -199,11 +197,11 @@ main {
                         }
 
                         h3 {
-                            width: calc(100% - 80px);
+                            width: calc(100% - 55px);
                         }
 
                         .menu {
-                            width: calc(100% - 80px);
+                            width: calc(100% - 55px);
                         }
                     }
 
@@ -217,18 +215,18 @@ main {
                 top: 0;
                 right: -80px;
                 background-color: $colorLightGreen;
-                width: 80px;
-                height: 65.8px;
-                transition: right 1s;
+                width: 59px;
+                height: 69px;
+                transition: right .7s;
+                fill: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                .fa-check {
-                    color: white;
-                    font-size: 2em;
-
+                svg {
+                    width: 20px;
+                    height: 20px;
                 }
             }
         }
