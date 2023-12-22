@@ -6,239 +6,245 @@
     box-sizing: border-box;
     font-family: $fontText;
 
-    h1 {
-        font-family: $fontTitle;
-        font-size: 28px;
-    }
+}
 
-    h2 {
-        font-family: $fontText;
-        font-size: 16px;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
+h1 {
+    font-family: $fontTitle;
+    font-size: 28px;
+}
 
-    h3 {
-        font-size: 18px;
-        font-family: $fontText;
-        font-weight: 500;
-        padding-bottom: 3px;
-    }
+h2 {
+    font-family: $fontText;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
-    p {
-        font-size: 15.043px;
-        font-family: $fontText;
-        font-weight: 300;
-    }
+h3 {
+    font-size: 18px;
+    font-family: $fontText;
+    font-weight: 500;
+    padding-bottom: 3px;
+}
 
-    header {
+p {
+    font-size: 15.043px;
+    font-family: $fontText;
+    font-weight: 300;
+}
 
-        position: relative;
-        display: flex;
-        flex-direction: column;
+header {
 
-        a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-            text-decoration: none;
-            color: black;
+    a {
 
-            .fa-arrow-left {
-                position: absolute;
-                bottom: 20px;
-                left: 20px;
-            }
+        text-decoration: none;
+        color: black;
 
-        }
-
-        .logoHeader {
-            max-width: 162px;
-            margin: 14px auto;
+        .fa-arrow-left {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
         }
 
     }
 
-    main {
+    .logoHeader {
+        max-width: 162px;
+        margin: 14px auto;
+    }
 
-        position: relative;
+}
 
-        img {
+main {
 
-            width: 100%;
-            height: 231px;
+    position: relative;
+
+    img {
+
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+
+        @media (min-width: 884px) and (max-width: 2000px) {
             object-fit: cover;
-
-            @media (min-width: 884px) and (max-width: 2000px) {
-                object-fit: cover;
-                height: 300px;
-            }
-
+            height: 300px;
         }
 
-        section {
+    }
 
-            .background {
-                background-color: #F6F6F6;
-                width: 100%;
-                border-top-right-radius: 15px;
-                border-top-left-radius: 15px;
-                margin-top: -70px;
-                z-index: 1;
+    section {
+
+        .background {
+            background-color: #F6F6F6;
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            margin-top: -70px;
+            z-index: 1;
+            position: relative;
+            padding-bottom: 50px;
+
+            @media (min-width: 1300px) and (max-width: 2000px) {
+                width: 70%;
+                left: 200px;
+            }
+
+            .title {
+                padding: 32px 17px 0 17px;
+                display: grid;
+                grid-template-columns: 1fr 30px;
+                align-items: center;
+                margin-bottom: 40px;
                 position: relative;
-                padding-bottom: 50px;
 
-                @media (min-width: 1300px) and (max-width: 2000px) {
-                    width: 70%;
-                    left: 200px;
+                @media (min-width: 1309px) and (max-width: 2000px) {
+                    display: grid;
+                    grid-template-columns: 30% 5%;
+                    justify-content: center;
                 }
 
-                .title {
-                    padding: 32px 17px 0 17px;
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                input[type="checkbox"]+label::before {
+                    content: url("../Images_et_textes_Ohmyfood/Status=Default.png");
+                    width: 22px;
+                    height: 21px;
+
+                }
+
+                input[type="checkbox"]:checked+label::after {
+                    content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
+                    position: absolute;
+                    right: 359px;
+                }
+            }
+
+            article {
+                padding: 0 10px;
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+                row-gap: 12px;
+                margin-bottom: 40px;
+
+                @media (min-width: 1309px) and (max-width: 2000px) {
                     display: grid;
-                    grid-template-columns: 1fr 30px;
-                    align-items: center;
-                    margin-bottom: 40px;
+                    grid-template-columns: 50%;
+                    justify-content: center;
+                }
+
+                h2 {
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid $colorLightGreen;
+                    width: 40px;
+                }
+
+                .boxeContent {
                     position: relative;
+                    padding: 15px;
+                    background-color: white;
+                    height: 65.8px;
+                    border-radius: 20px;
+                    overflow: hidden;
 
-                    @media (min-width: 1309px) and (max-width: 2000px) {
-                        display: grid;
-                        grid-template-columns: 30% 5%;
-                        justify-content: center;
-                    }
+                    .repas {
 
-                    input[type="checkbox"] {
-                        display: none;
-                    }
+                        h3 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            text-overflow: ellipsis;
+                            /* ellipsis works with overflow hidden */
+                            overflow: hidden;
+                            /* ellipsis works with overflow hidden */
+                            white-space: nowrap;
+                            width: 100%;
+                            transition: width 1s;
+                        }
 
-                    input[type="checkbox"] + label::before {
-                        content: url("../Images_et_textes_Ohmyfood/Status=Default.png");
-                        width: 22px;
-                        height: 21px;
-                        
-                    }
+                        .menu {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            transition: width 1s;
 
-                    input[type="checkbox"]:checked + label::after {
-                        content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
-                        position: absolute;
-                        right: 359px;
-                    }
-                }
-
-                article {
-                    padding: 0 10px;
-                    display: grid;
-                    grid-template-rows: repeat(4, auto);
-                    row-gap: 12px;
-                    margin-bottom: 40px;
-
-                    @media (min-width: 1309px) and (max-width: 2000px) {
-                        display: grid;
-                        grid-template-columns: 50%;
-                        justify-content: center;
-                    }
-
-                    h2 {
-                        padding-bottom: 5px;
-                        border-bottom: 3px solid $colorLightGreen;
-                        width: 40px;
-                    }
-
-                    .boxeContent {
-                        position: relative;
-                        padding: 15px;
-                        background-color: white;
-                        height: 65.8px;
-                        border-radius: 20px;
-                        overflow: hidden;
-
-                        .repas {
-
-                            h3 {
-                                font-size: 18px;
-                                font-weight: 500;
-                                text-overflow: ellipsis;
-                                /* ellipsis works with overflow hidden */
-                                overflow: hidden;
-                                /* ellipsis works with overflow hidden */
-                                white-space: nowrap;
-                                width: 100%;
-                                transition: width 1s;
-                            }
-
-                            p {
+                            .recipe {
                                 text-overflow: ellipsis;
                                 /* ellipsis works with overflow hidden */
                                 overflow: hidden;
                                 /* ellipsis works with overflow hidden */
                                 white-space: nowrap;
                                 font-size: 15.043px;
-                                width: 100%;
-                                transition: width 1s;
 
-                                span {
+                                .prix {
                                     float: right;
                                 }
                             }
-
-                        }
-
-
-
-                        &:hover {
-                            // <-- ça c'est boxeContent, quand il est hover
-
-                            .check {
-                                // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
-                                right: 0;
-                            }
-
-                            h3 {
-                                width: calc(100% - 80px);
-                            }
-
-                            p {
-                                width: calc(100% - 80px);
-                            }
                         }
 
                     }
 
 
-                }
 
-                .check {
-                    position: absolute;
-                    top: 0;
-                    right: -80px;
-                    background-color: $colorLightGreen;
-                    width: 80px;
-                    height: 65.8px;
-                    transition: right 1s;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    &:hover {
+                        // <-- ça c'est boxeContent, quand il est hover
 
-                    .fa-check {
-                        color: white;
-                        font-size: 2em;
+                        .check {
+                            // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
+                            right: 0;
+                        }
 
+                        h3 {
+                            width: calc(100% - 80px);
+                        }
+
+                        .menu {
+                            width: calc(100% - 80px);
+                        }
                     }
+
                 }
+
+
             }
 
-            button {
-                display: block;
-                @include boutton;
-                margin: 0 auto;
-                transition: 0.5s opacity;
+            .check {
+                position: absolute;
+                top: 0;
+                right: -80px;
+                background-color: $colorLightGreen;
+                width: 80px;
+                height: 65.8px;
+                transition: right 1s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-                &:hover {
-                    opacity: 0.8;
+                .fa-check {
+                    color: white;
+                    font-size: 2em;
+
                 }
             }
         }
 
+        button {
+            display: block;
+            @include boutton;
+            margin: 0 auto;
+            transition: 0.5s opacity;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
+
 }
 
 
