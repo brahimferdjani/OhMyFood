@@ -6,296 +6,298 @@
     box-sizing: border-box;
     font-family: $fontText;
 
-    header {
+}
 
+header {
+
+    display: flex;
+    flex-direction: column;
+
+    .logoHeader {
+        max-width: 162px;
+        margin: 14px auto;
+    }
+
+    .localisation {
+
+        background-color: #EAEAEA;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        padding: 15px 119px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)inset;
 
-        .logoHeader {
-            max-width: 162px;
-            margin: 14px auto;
+        .fa-solid .fa-location-dot {
+            font-size: 2em;
         }
 
-        .localisation {
+        .input {
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            outline: none;
 
-            background-color: #EAEAEA;
-            display: flex;
-            justify-content: center;
-            padding: 15px 119px;
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)inset;
-
-            .fa-solid .fa-location-dot {
-                font-size: 2em;
+            &::placeholder {
+                color: black;
             }
-
-            .input {
-                background-color: transparent;
-                border: none;
-                text-align: center;
-                font-weight: 500;
-                font-size: 16px;
-                outline: none;
-
-                &::placeholder {
-                    color: black;
-                }
-            }
-
         }
 
     }
 
-    main {
-        .rectangleOne {
+}
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: $colorLightGrey;
+main {
+    .rectangleOne {
 
-            h1 {
-                padding: 39px 42px 0 58px;
-                @include font-title;
-                text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $colorLightGrey;
 
-                @media (min-width: 426px) and (max-width: 1440px) {
+        h1 {
+            padding: 39px 42px 0 58px;
+            @include font-title;
+            text-align: center;
 
-                    font-size: 40px;
-                    padding-top: 30px;
-                    padding-bottom: 18px;
+            @media (min-width: 426px) and (max-width: 1440px) {
 
-                }
+                font-size: 40px;
+                padding-top: 30px;
+                padding-bottom: 18px;
 
             }
 
-            p {
-                padding: 12px 26px 27px 34px;
-                @include font-text;
-                text-align: center;
+        }
 
-                @media (min-width: 426px) and (max-width: 1440px) {
+        p {
+            padding: 12px 26px 27px 34px;
+            @include font-text;
+            text-align: center;
 
-                    padding-top: 0px;
-                    padding-bottom: 18px;
+            @media (min-width: 426px) and (max-width: 1440px) {
 
-                }
-            }
+                padding-top: 0px;
+                padding-bottom: 18px;
 
-            button {
-                @include boutton;
-                margin: 0 auto;
-                margin-bottom: 75px;
-                transition: 0.5s opacity;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-
-                @media (min-width: 426px) and (max-width: 1440px) {
-
-                    margin-bottom: 30px;
-                }
             }
         }
 
-        .rectangleTwo {
+        button {
+            @include boutton;
+            margin: 0 auto;
+            margin-bottom: 75px;
+            transition: 0.5s opacity;
 
-            .two {
-                padding: 50px 20px;
+            &:hover {
+                opacity: 0.8;
+            }
 
-                @media (min-width: 635px) and (max-width: 1440px) {
+            @media (min-width: 426px) and (max-width: 1440px) {
 
-                    padding: 50px 180px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .rectangleTwo {
+
+        .two {
+            padding: 50px 20px;
+
+            @media (min-width: 635px) and (max-width: 1440px) {
+
+                padding: 50px 180px;
+            }
+
+
+
+            h1 {
+                @include font-title;
+                margin-bottom: 25px;
+            }
+
+            .boxe {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media (min-width: 1179px) and (max-width: 1440px) {
+
+                    display: grid;
+                    grid-template-columns: repeat(3, auto);
+                    justify-content: space-between;
+                    width: 100%;
                 }
 
+                .boxes {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    width: 100%;
+                    margin-bottom: 24.92px;
+                    padding: 28px 30px;
+                    border: 1px solid $colorLightGrey;
+                    background-color: $colorLightGrey;
+                    border-radius: 20px;
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
-
-                h1 {
-                    @include font-title;
-                    margin-bottom: 25px;
-                }
-
-                .boxe {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    @media (min-width: 1179px) and (max-width: 1440px) {
-
-                        display: grid;
-                        grid-template-columns: repeat(3, auto);
-                        justify-content: space-between;
-                        width: 100%;
+                    .number {
+                        position: absolute;
+                        border-radius: 20px;
+                        bottom: 27px;
+                        left: -10px;
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $colorPurple;
+                        color: white;
                     }
 
-                    .boxes {
-                        position: relative;
-                        display: grid;
-                        grid-template-columns: repeat(2, auto);
-                        width: 100%;
-                        margin-bottom: 24.92px;
-                        padding: 28px 30px;
-                        border: 1px solid $colorLightGrey;
-                        background-color: $colorLightGrey;
-                        border-radius: 20px;
-                        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                    .fa-solid {
+                        font-size: large;
+                        color: #7E7E7E;
 
-                        .number {
-                            position: absolute;
-                            border-radius: 20px;
-                            bottom: 27px;
-                            left: -10px;
-                            width: 25px;
-                            height: 25px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: $colorPurple;
-                            color: white;
-                        }
-
-                        .fa-solid {
-                            font-size: large;
-                            color: #7E7E7E;
-
-                            &:hover {
-                                color: $colorPurple;
-                            }
-
-                            @media (min-width: 426px) and (max-width: 1440px) {
-
-                                text-align: center;
-                            }
-                        }
-
-                        p {
-                            text-align: left;
-                            font-size: 16px;
+                        &:hover {
+                            color: $colorPurple;
                         }
 
                         @media (min-width: 426px) and (max-width: 1440px) {
-                            gap: 15px;
-                        }
 
+                            text-align: center;
+                        }
                     }
+
+                    p {
+                        text-align: left;
+                        font-size: 16px;
+                    }
+
+                    @media (min-width: 426px) and (max-width: 1440px) {
+                        gap: 15px;
+                    }
+
                 }
             }
         }
+    }
 
-        .rectangleThree {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            padding: 0 20px;
-            background-color: $colorLightGrey;
-    
-            .three {
-    
+    .rectangleThree {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0 20px;
+        background-color: $colorLightGrey;
+
+        .three {
+
+            @media (min-width: 828px) and (max-width: 1440px) {
+
+                padding: 50px 180px;
+            }
+
+            @media (min-width: 828px) and (max-width: 1440px) {
+
+                padding: 0 180px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                padding: 54px 0 26px;
+                @include font-title;
+
                 @media (min-width: 828px) and (max-width: 1440px) {
-    
-                    padding: 50px 180px;
+
+                    padding-top: 30px;
                 }
-    
+            }
+
+            .restau {
+
                 @media (min-width: 828px) and (max-width: 1440px) {
-    
-                    padding: 0 180px;
-                    margin-bottom: 30px;
+
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    column-gap: 100px;
+                    row-gap: 50px;
                 }
-    
-                h1 {
-                    padding: 54px 0 26px;
-                    @include font-title;
-    
-                    @media (min-width: 828px) and (max-width: 1440px) {
-    
-                        padding-top: 30px;
-                    }
-                }
-    
-                .restau {
-    
-                    @media (min-width: 828px) and (max-width: 1440px) {
-    
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(2, 1fr);
-                        column-gap: 100px;
-                        row-gap: 50px;
-                    }
-    
-                    a {
-    
-                        text-decoration: none;
-                        color: black;
-    
-                        article {
-                            background-color: white;
-                            height: 100%;
-                            margin-bottom: 16px;
-                            border-radius: 15px;
-    
-                            @media (min-width: 828px) and (max-width: 1440px) {
-                                min-width: 162px;
+
+                a {
+
+                    text-decoration: none;
+                    color: black;
+
+                    article {
+                        background-color: white;
+                        height: 100%;
+                        margin-bottom: 16px;
+                        border-radius: 15px;
+
+                        @media (min-width: 828px) and (max-width: 1440px) {
+                            min-width: 162px;
+                        }
+
+                        img {
+
+                            width: 100%;
+                            height: 231px;
+                            object-fit: cover;
+                            border-top-right-radius: 15px;
+                            border-top-left-radius: 15px;
+
+                        }
+
+                        .images {
+
+                            position: relative;
+
+                            p {
+                                position: absolute;
+                                top: 10px;
+                                right: 20px;
+                                padding: 7px 9px;
+                                background-color: $colorLightGreen;
                             }
-    
-                            img {
-    
-                                width: 100%;
-                                height: 231px;
-                                object-fit: cover;
-                                border-top-right-radius: 15px;
-                                border-top-left-radius: 15px;
-    
-                            }
-    
-                            .images {
-    
-                                position: relative;
-    
+                        }
+
+                        .content {
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 12px 16px;
+                            position: relative;
+
+                            .description {
+
+                                h2 {
+                                    font-size: 18px;
+                                }
+
                                 p {
-                                    position: absolute;
-                                    top: 10px;
-                                    right: 20px;
-                                    padding: 7px 9px;
-                                    background-color: $colorLightGreen;
+                                    @include font-text;
+                                    font-size: 17px;
                                 }
                             }
-    
-                            .content {
-    
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                padding: 12px 16px;
-                                position: relative;
-    
-                                .description {
-    
-                                    h2 {
-                                        font-size: 18px;
-                                    }
-    
-                                    p {
-                                        @include font-text;
-                                        font-size: 17px;
-                                    }
-                                }
-    
-                                input[type="checkbox"] {
-                                    display: none;
-                                }
-    
-                                input[type="checkbox"] + label::before {
-                                    content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
-                                }
-    
-                                input[type="checkbox"]:checked + label::after {
-                                    content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
-                                    position: absolute;
-                                    right: 16px;
-                                }
-    
-                                /* .heart {
+
+                            input[type="checkbox"] {
+                                display: none;
+                            }
+
+                            input[type="checkbox"]+label::before {
+                                content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
+                            }
+
+                            input[type="checkbox"]:checked+label::after {
+                                content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
+                                position: absolute;
+                                right: 16px;
+                            }
+
+                            /* .heart {
     
                                     display: block;
     
@@ -313,139 +315,138 @@
                                     }
                                 }
                                 */
-                            }
                         }
-                    }
-                }
-            }
-    
-    
-    
-            .boxe2 {
-                padding: 10px;
-                background-color: #353535;
-    
-                .boxeContent {
-                    position: relative;
-                    padding: 15px;
-                    background-color: white;
-                    height: 65.8px;
-                    border-radius: 20px;
-                    overflow: hidden;
-    
-                    .repas {
-    
-                        h2 {
-                            font-size: 18px;
-                            font-weight: 500;
-                            text-overflow: ellipsis;
-                            /* ellipsis works with overflow hidden */
-                            overflow: hidden;
-                            /* ellipsis works with overflow hidden */
-                            white-space: nowrap;
-                            transition: width 1s;
-                        }
-    
-                        p {
-                            text-overflow: ellipsis;
-                            /* ellipsis works with overflow hidden */
-                            overflow: hidden;
-                            /* ellipsis works with overflow hidden */
-                            font-size: 15.043px;
-                            transition: width 1s;
-    
-                            span {
-                                float: right;
-                            }
-                        }
-                    }
-    
-                    &:hover {
-                        // <-- ça c'est boxeContent, quand il est hover
-    
-                        .check {
-                            // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
-                            right: 0;
-                        }
-    
-                        h2 {
-                            width: calc(100% - 80px);
-                        }
-    
-                        p {
-                            width: calc(100% - 80px);
-                        }
-                    }
-    
-    
-                }
-    
-                .check {
-                    position: absolute;
-                    top: 0;
-                    right: -80px;
-                    background-color: red;
-                    width: 80px;
-                    height: 65.8px;
-                    transition: right 1s;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-    
-                    .fa-check {
-                        color: white;
-                        font-size: 2em;
-    
                     }
                 }
             }
         }
 
+
+
+        .boxe2 {
+            padding: 10px;
+            background-color: #353535;
+
+            .boxeContent {
+                position: relative;
+                padding: 15px;
+                background-color: white;
+                height: 65.8px;
+                border-radius: 20px;
+                overflow: hidden;
+
+                .repas {
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-overflow: ellipsis;
+                        /* ellipsis works with overflow hidden */
+                        overflow: hidden;
+                        /* ellipsis works with overflow hidden */
+                        white-space: nowrap;
+                        transition: width 1s;
+                    }
+
+                    p {
+                        text-overflow: ellipsis;
+                        /* ellipsis works with overflow hidden */
+                        overflow: hidden;
+                        /* ellipsis works with overflow hidden */
+                        font-size: 15.043px;
+                        transition: width 1s;
+
+                        span {
+                            float: right;
+                        }
+                    }
+                }
+
+                &:hover {
+                    // <-- ça c'est boxeContent, quand il est hover
+
+                    .check {
+                        // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
+                        right: 0;
+                    }
+
+                    h2 {
+                        width: calc(100% - 80px);
+                    }
+
+                    p {
+                        width: calc(100% - 80px);
+                    }
+                }
+
+
+            }
+
+            .check {
+                position: absolute;
+                top: 0;
+                right: -80px;
+                background-color: red;
+                width: 80px;
+                height: 65.8px;
+                transition: right 1s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .fa-check {
+                    color: white;
+                    font-size: 2em;
+
+                }
+            }
+        }
     }
 
-    
+}
 
-    footer {
 
-        padding: 22px 25px;
-        background-color: $colorGrey;
-        color: white;
+
+footer {
+
+    padding: 22px 25px;
+    background-color: $colorGrey;
+    color: white;
+
+    @media (min-width: 884px) and (max-width: 2000px) {
+        padding: 30px 25px;
+        padding-top: 70px;
+    }
+
+    img {
+        max-width: 162px;
+        padding-bottom: 5px;
 
         @media (min-width: 884px) and (max-width: 2000px) {
-            padding: 30px 25px;
-            padding-top: 70px;
+            float: right;
+            margin-left: 80px;
+        }
+    }
+
+    .infos {
+
+        @media (min-width: 884px) and (max-width: 2000px) {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 20px;
+            justify-content: flex-end;
         }
 
-        img {
-            max-width: 162px;
-            padding-bottom: 5px;
-
-            @media (min-width: 884px) and (max-width: 2000px) {
-                float: right;
-                margin-left: 80px;
-            }
+        .sousinfos {
+            display: grid;
+            grid-template-columns: 15px auto;
+            column-gap: 15px;
         }
+    }
 
-        .infos {
-
-            @media (min-width: 884px) and (max-width: 2000px) {
-                display: grid;
-                grid-template-columns: repeat(4, auto);
-                column-gap: 20px;
-                justify-content: flex-end;
-            }
-
-            .sousinfos {
-                display: grid;
-                grid-template-columns: 15px auto;
-                column-gap: 15px;
-            }
-        }
-
-        div,
-        p {
-            padding-bottom: 2px;
-        }
+    div,
+    p {
+        padding-bottom: 2px;
     }
 }

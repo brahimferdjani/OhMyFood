@@ -92,7 +92,9 @@
   display: none;
 }
 * main section .background .title input[type=checkbox] + label::before {
-  content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
+  content: url("../Images_et_textes_Ohmyfood/Status=Default.png");
+  width: 22px;
+  height: 21px;
 }
 * main section .background .title input[type=checkbox]:checked + label::after {
   content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
@@ -136,7 +138,6 @@
   white-space: nowrap;
   width: 100%;
   transition: width 1s;
-  clear: both;
 }
 * main section .background article .boxeContent .repas p {
   text-overflow: ellipsis;
@@ -147,7 +148,6 @@
   font-size: 15.043px;
   width: 100%;
   transition: width 1s;
-  clear: both;
 }
 * main section .background article .boxeContent .repas p span {
   float: right;

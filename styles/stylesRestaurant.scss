@@ -110,7 +110,9 @@
                     }
 
                     input[type="checkbox"] + label::before {
-                        content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
+                        content: url("../Images_et_textes_Ohmyfood/Status=Default.png");
+                        width: 22px;
+                        height: 21px;
                         
                     }
 
@@ -160,7 +162,6 @@
                                 white-space: nowrap;
                                 width: 100%;
                                 transition: width 1s;
-                                clear: both;
                             }
 
                             p {
@@ -172,7 +173,6 @@
                                 font-size: 15.043px;
                                 width: 100%;
                                 transition: width 1s;
-                                clear: both;
 
                                 span {
                                     float: right;

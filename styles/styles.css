@@ -4,25 +4,26 @@
   box-sizing: border-box;
   font-family: Roboto;
 }
-* header {
+
+header {
   display: flex;
   flex-direction: column;
 }
-* header .logoHeader {
+header .logoHeader {
   max-width: 162px;
   margin: 14px auto;
 }
-* header .localisation {
+header .localisation {
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   padding: 15px 119px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
 }
-* header .localisation .fa-solid .fa-location-dot {
+header .localisation .fa-solid .fa-location-dot {
   font-size: 2em;
 }
-* header .localisation .input {
+header .localisation .input {
   background-color: transparent;
   border: none;
   text-align: center;
@@ -30,16 +31,17 @@
   font-size: 16px;
   outline: none;
 }
-* header .localisation .input::placeholder {
+header .localisation .input::placeholder {
   color: black;
 }
-* main .rectangleOne {
+
+main .rectangleOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
 }
-* main .rectangleOne h1 {
+main .rectangleOne h1 {
   padding: 39px 42px 0 58px;
   font-family: Roboto;
   font-size: 24px;
@@ -47,13 +49,13 @@
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1440px) {
-  * main .rectangleOne h1 {
+  main .rectangleOne h1 {
     font-size: 40px;
     padding-top: 30px;
     padding-bottom: 18px;
   }
 }
-* main .rectangleOne p {
+main .rectangleOne p {
   padding: 12px 26px 27px 34px;
   font-family: Roboto;
   font-size: 18px;
@@ -61,12 +63,12 @@
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1440px) {
-  * main .rectangleOne p {
+  main .rectangleOne p {
     padding-top: 0px;
     padding-bottom: 18px;
   }
 }
-* main .rectangleOne button {
+main .rectangleOne button {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -80,42 +82,42 @@
   margin-bottom: 75px;
   transition: 0.5s opacity;
 }
-* main .rectangleOne button:hover {
+main .rectangleOne button:hover {
   opacity: 0.8;
 }
 @media (min-width: 426px) and (max-width: 1440px) {
-  * main .rectangleOne button {
+  main .rectangleOne button {
     margin-bottom: 30px;
   }
 }
-* main .rectangleTwo .two {
+main .rectangleTwo .two {
   padding: 50px 20px;
 }
 @media (min-width: 635px) and (max-width: 1440px) {
-  * main .rectangleTwo .two {
+  main .rectangleTwo .two {
     padding: 50px 180px;
   }
 }
-* main .rectangleTwo .two h1 {
+main .rectangleTwo .two h1 {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-* main .rectangleTwo .two .boxe {
+main .rectangleTwo .two .boxe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1179px) and (max-width: 1440px) {
-  * main .rectangleTwo .two .boxe {
+  main .rectangleTwo .two .boxe {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     width: 100%;
   }
 }
-* main .rectangleTwo .two .boxe .boxes {
+main .rectangleTwo .two .boxe .boxes {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -127,7 +129,7 @@
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-* main .rectangleTwo .two .boxe .boxes .number {
+main .rectangleTwo .two .boxe .boxes .number {
   position: absolute;
   border-radius: 20px;
   bottom: 27px;
@@ -140,28 +142,28 @@
   background-color: #9356DC;
   color: white;
 }
-* main .rectangleTwo .two .boxe .boxes .fa-solid {
+main .rectangleTwo .two .boxe .boxes .fa-solid {
   font-size: large;
   color: #7E7E7E;
 }
-* main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
+main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
   color: #9356DC;
 }
 @media (min-width: 426px) and (max-width: 1440px) {
-  * main .rectangleTwo .two .boxe .boxes .fa-solid {
+  main .rectangleTwo .two .boxe .boxes .fa-solid {
     text-align: center;
   }
 }
-* main .rectangleTwo .two .boxe .boxes p {
+main .rectangleTwo .two .boxe .boxes p {
   text-align: left;
   font-size: 16px;
 }
 @media (min-width: 426px) and (max-width: 1440px) {
-  * main .rectangleTwo .two .boxe .boxes {
+  main .rectangleTwo .two .boxe .boxes {
     gap: 15px;
   }
 }
-* main .rectangleThree {
+main .rectangleThree {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -169,29 +171,29 @@
   background-color: #F6F6F6;
 }
 @media (min-width: 828px) and (max-width: 1440px) {
-  * main .rectangleThree .three {
+  main .rectangleThree .three {
     padding: 50px 180px;
   }
 }
 @media (min-width: 828px) and (max-width: 1440px) {
-  * main .rectangleThree .three {
+  main .rectangleThree .three {
     padding: 0 180px;
     margin-bottom: 30px;
   }
 }
-* main .rectangleThree .three h1 {
+main .rectangleThree .three h1 {
   padding: 54px 0 26px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
 }
 @media (min-width: 828px) and (max-width: 1440px) {
-  * main .rectangleThree .three h1 {
+  main .rectangleThree .three h1 {
     padding-top: 30px;
   }
 }
 @media (min-width: 828px) and (max-width: 1440px) {
-  * main .rectangleThree .three .restau {
+  main .rectangleThree .three .restau {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -199,39 +201,39 @@
     row-gap: 50px;
   }
 }
-* main .rectangleThree .three .restau a {
+main .rectangleThree .three .restau a {
   text-decoration: none;
   color: black;
 }
-* main .rectangleThree .three .restau a article {
+main .rectangleThree .three .restau a article {
   background-color: white;
   height: 100%;
   margin-bottom: 16px;
   border-radius: 15px;
 }
 @media (min-width: 828px) and (max-width: 1440px) {
-  * main .rectangleThree .three .restau a article {
+  main .rectangleThree .three .restau a article {
     min-width: 162px;
   }
 }
-* main .rectangleThree .three .restau a article img {
+main .rectangleThree .three .restau a article img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-* main .rectangleThree .three .restau a article .images {
+main .rectangleThree .three .restau a article .images {
   position: relative;
 }
-* main .rectangleThree .three .restau a article .images p {
+main .rectangleThree .three .restau a article .images p {
   position: absolute;
   top: 10px;
   right: 20px;
   padding: 7px 9px;
   background-color: #99e2d0;
 }
-* main .rectangleThree .three .restau a article .content {
+main .rectangleThree .three .restau a article .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,48 +241,48 @@
   position: relative;
   /* .heart {
 
-      display: block;
-
-      &active:focus::after {
-          display: none;
-      }
-  }
-
-  .fill {
-      display: none;
-
-      &active,:focus::after {
           display: block;
 
+          &active:focus::after {
+              display: none;
+          }
       }
-  }
-  */
+
+      .fill {
+          display: none;
+
+          &active,:focus::after {
+              display: block;
+
+          }
+      }
+      */
 }
-* main .rectangleThree .three .restau a article .content .description h2 {
+main .rectangleThree .three .restau a article .content .description h2 {
   font-size: 18px;
 }
-* main .rectangleThree .three .restau a article .content .description p {
+main .rectangleThree .three .restau a article .content .description p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   font-size: 17px;
 }
-* main .rectangleThree .three .restau a article .content input[type=checkbox] {
+main .rectangleThree .three .restau a article .content input[type=checkbox] {
   display: none;
 }
-* main .rectangleThree .three .restau a article .content input[type=checkbox] + label::before {
+main .rectangleThree .three .restau a article .content input[type=checkbox] + label::before {
   content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
 }
-* main .rectangleThree .three .restau a article .content input[type=checkbox]:checked + label::after {
+main .rectangleThree .three .restau a article .content input[type=checkbox]:checked + label::after {
   content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
   position: absolute;
   right: 16px;
 }
-* main .rectangleThree .boxe2 {
+main .rectangleThree .boxe2 {
   padding: 10px;
   background-color: #353535;
 }
-* main .rectangleThree .boxe2 .boxeContent {
+main .rectangleThree .boxe2 .boxeContent {
   position: relative;
   padding: 15px;
   background-color: white;
@@ -288,7 +290,7 @@
   border-radius: 20px;
   overflow: hidden;
 }
-* main .rectangleThree .boxe2 .boxeContent .repas h2 {
+main .rectangleThree .boxe2 .boxeContent .repas h2 {
   font-size: 18px;
   font-weight: 500;
   text-overflow: ellipsis;
@@ -298,7 +300,7 @@
   white-space: nowrap;
   transition: width 1s;
 }
-* main .rectangleThree .boxe2 .boxeContent .repas p {
+main .rectangleThree .boxe2 .boxeContent .repas p {
   text-overflow: ellipsis;
   /* ellipsis works with overflow hidden */
   overflow: hidden;
@@ -306,19 +308,19 @@
   font-size: 15.043px;
   transition: width 1s;
 }
-* main .rectangleThree .boxe2 .boxeContent .repas p span {
+main .rectangleThree .boxe2 .boxeContent .repas p span {
   float: right;
 }
-* main .rectangleThree .boxe2 .boxeContent:hover .check {
+main .rectangleThree .boxe2 .boxeContent:hover .check {
   right: 0;
 }
-* main .rectangleThree .boxe2 .boxeContent:hover h2 {
+main .rectangleThree .boxe2 .boxeContent:hover h2 {
   width: calc(100% - 80px);
 }
-* main .rectangleThree .boxe2 .boxeContent:hover p {
+main .rectangleThree .boxe2 .boxeContent:hover p {
   width: calc(100% - 80px);
 }
-* main .rectangleThree .boxe2 .check {
+main .rectangleThree .boxe2 .check {
   position: absolute;
   top: 0;
   right: -80px;
@@ -331,45 +333,46 @@
   justify-content: center;
   align-items: center;
 }
-* main .rectangleThree .boxe2 .check .fa-check {
+main .rectangleThree .boxe2 .check .fa-check {
   color: white;
   font-size: 2em;
 }
-* footer {
+
+footer {
   padding: 22px 25px;
   background-color: #353535;
   color: white;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  * footer {
+  footer {
     padding: 30px 25px;
     padding-top: 70px;
   }
 }
-* footer img {
+footer img {
   max-width: 162px;
   padding-bottom: 5px;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  * footer img {
+  footer img {
     float: right;
     margin-left: 80px;
   }
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  * footer .infos {
+  footer .infos {
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 20px;
     justify-content: flex-end;
   }
 }
-* footer .infos .sousinfos {
+footer .infos .sousinfos {
   display: grid;
   grid-template-columns: 15px auto;
   column-gap: 15px;
 }
-* footer div,
-* footer p {
+footer div,
+footer p {
   padding-bottom: 2px;
 }/*# sourceMappingURL=styles.css.map */
