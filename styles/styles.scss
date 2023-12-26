@@ -8,6 +8,49 @@
 
 }
 
+.loader {
+    background-color: $colorLightGrey;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    align-content: center;
+    inset: 0;
+    z-index: 1;
+    animation: dissapear 3s forwards 2s;
+
+    .spin {
+        width: 75px;
+        height: 75px;
+        border: 15px solid white;
+        border-top-color: $colorLightGreen;
+        border-radius: 50%;
+        animation: loading .75s ease infinite;
+    }
+
+    @keyframes loading {
+        from {
+            transform: rotate(0turn);
+        }
+
+        to {
+            transform: rotate(1turn);
+        }
+
+    }
+}
+
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
 header {
 
     display: flex;
@@ -283,128 +326,116 @@ main {
                                 }
                             }
 
-                            input[type="checkbox"] {
-                                display: none;
-                            }
+                            .coeur {
+                                position: relative;
+                                margin-right: 1.5em;
+                                margin-bottom: 1em;
 
-                            input[type="checkbox"]+label::before {
-                                content: url("../Images_et_textes_Ohmyfood/Status=Default.svg");
-                            }
-
-                            input[type="checkbox"]:checked+label::after {
-                                content: url("../Images_et_textes_Ohmyfood/Status=Liked.svg");
-                                position: absolute;
-                                right: 16px;
-                            }
-
-                            /* .heart {
-    
-                                    display: block;
-    
-                                    &active:focus::after {
-                                        display: none;
-                                    }
+                                svg {
+                                    position: absolute;
+                                    inset: 0;
                                 }
-    
-                                .fill {
-                                    display: none;
-    
-                                    &active,:focus::after {
-                                        display: block;
-    
-                                    }
+
+                                .vide:hover+.plein {
+                                    visibility: visible;
                                 }
-                                */
+
+                                .plein {
+                                    visibility: hidden;
+                                    transform: scale(1.2);
+                                }
+                            }
                         }
+
                     }
-                }
-            }
-        }
-
-
-
-        .boxe2 {
-            padding: 10px;
-            background-color: #353535;
-
-            .boxeContent {
-                position: relative;
-                padding: 15px;
-                background-color: white;
-                height: 65.8px;
-                border-radius: 20px;
-                overflow: hidden;
-
-                .repas {
-
-                    h2 {
-                        font-size: 18px;
-                        font-weight: 500;
-                        text-overflow: ellipsis;
-                        /* ellipsis works with overflow hidden */
-                        overflow: hidden;
-                        /* ellipsis works with overflow hidden */
-                        white-space: nowrap;
-                        transition: width 1s;
-                    }
-
-                    p {
-                        text-overflow: ellipsis;
-                        /* ellipsis works with overflow hidden */
-                        overflow: hidden;
-                        /* ellipsis works with overflow hidden */
-                        font-size: 15.043px;
-                        transition: width 1s;
-
-                        span {
-                            float: right;
-                        }
-                    }
-                }
-
-                &:hover {
-                    // <-- ça c'est boxeContent, quand il est hover
-
-                    .check {
-                        // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
-                        right: 0;
-                    }
-
-                    h2 {
-                        width: calc(100% - 80px);
-                    }
-
-                    p {
-                        width: calc(100% - 80px);
-                    }
-                }
-
-
-            }
-
-            .check {
-                position: absolute;
-                top: 0;
-                right: -80px;
-                background-color: red;
-                width: 80px;
-                height: 65.8px;
-                transition: right 1s;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .fa-check {
-                    color: white;
-                    font-size: 2em;
-
                 }
             }
         }
     }
-
 }
+
+
+
+.boxe2 {
+    padding: 10px;
+    background-color: #353535;
+
+    .boxeContent {
+        position: relative;
+        padding: 15px;
+        background-color: white;
+        height: 65.8px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .repas {
+
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                /* ellipsis works with overflow hidden */
+                overflow: hidden;
+                /* ellipsis works with overflow hidden */
+                white-space: nowrap;
+                transition: width 1s;
+            }
+
+            p {
+                text-overflow: ellipsis;
+                /* ellipsis works with overflow hidden */
+                overflow: hidden;
+                /* ellipsis works with overflow hidden */
+                font-size: 15.043px;
+                transition: width 1s;
+
+                span {
+                    float: right;
+                }
+            }
+        }
+
+        &:hover {
+            // <-- ça c'est boxeContent, quand il est hover
+
+            .check {
+                // <-- ça c'est .check, à l'intérieur de boxeContent, quand il est hover
+                right: 0;
+            }
+
+            h2 {
+                width: calc(100% - 80px);
+            }
+
+            p {
+                width: calc(100% - 80px);
+            }
+        }
+
+
+    }
+
+    .check {
+        position: absolute;
+        top: 0;
+        right: -80px;
+        background-color: red;
+        width: 80px;
+        height: 65.8px;
+        transition: right 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .fa-check {
+            color: white;
+            font-size: 2em;
+
+        }
+    }
+}
+
 
 
 
