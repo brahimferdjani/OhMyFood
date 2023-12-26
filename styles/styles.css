@@ -85,7 +85,7 @@ main .rectangleOne h1 {
   font-weight: 700;
   text-align: center;
 }
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) and (max-width: 1500px) {
   main .rectangleOne h1 {
     font-size: 40px;
     padding-top: 30px;
@@ -99,7 +99,7 @@ main .rectangleOne p {
   font-weight: 300;
   text-align: center;
 }
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) and (max-width: 1500px) {
   main .rectangleOne p {
     padding-top: 0px;
     padding-bottom: 18px;
@@ -122,7 +122,7 @@ main .rectangleOne button {
 main .rectangleOne button:hover {
   opacity: 0.8;
 }
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) and (max-width: 1500px) {
   main .rectangleOne button {
     margin-bottom: 30px;
   }
@@ -130,7 +130,7 @@ main .rectangleOne button:hover {
 main .rectangleTwo .two {
   padding: 50px 20px;
 }
-@media (min-width: 635px) and (max-width: 1440px) {
+@media (min-width: 635px) and (max-width: 1500px) {
   main .rectangleTwo .two {
     padding: 50px 180px;
   }
@@ -146,7 +146,7 @@ main .rectangleTwo .two .boxe {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1179px) and (max-width: 1440px) {
+@media (min-width: 1179px) and (max-width: 1500px) {
   main .rectangleTwo .two .boxe {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -186,7 +186,7 @@ main .rectangleTwo .two .boxe .boxes .fa-solid {
 main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
   color: #9356DC;
 }
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) and (max-width: 1500px) {
   main .rectangleTwo .two .boxe .boxes .fa-solid {
     text-align: center;
   }
@@ -195,7 +195,7 @@ main .rectangleTwo .two .boxe .boxes p {
   text-align: left;
   font-size: 16px;
 }
-@media (min-width: 426px) and (max-width: 1440px) {
+@media (min-width: 426px) and (max-width: 1500px) {
   main .rectangleTwo .two .boxe .boxes {
     gap: 15px;
   }
@@ -207,12 +207,12 @@ main .rectangleThree {
   padding: 0 20px;
   background-color: #F6F6F6;
 }
-@media (min-width: 828px) and (max-width: 1440px) {
+@media (min-width: 828px) and (max-width: 1500px) {
   main .rectangleThree .three {
     padding: 50px 180px;
   }
 }
-@media (min-width: 828px) and (max-width: 1440px) {
+@media (min-width: 828px) and (max-width: 1500px) {
   main .rectangleThree .three {
     padding: 0 180px;
     margin-bottom: 30px;
@@ -224,12 +224,12 @@ main .rectangleThree .three h1 {
   font-size: 24px;
   font-weight: 700;
 }
-@media (min-width: 828px) and (max-width: 1440px) {
+@media (min-width: 828px) and (max-width: 1500px) {
   main .rectangleThree .three h1 {
     padding-top: 30px;
   }
 }
-@media (min-width: 828px) and (max-width: 1440px) {
+@media (min-width: 828px) and (max-width: 1500px) {
   main .rectangleThree .three .restau {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -248,7 +248,7 @@ main .rectangleThree .three .restau a article {
   margin-bottom: 16px;
   border-radius: 15px;
 }
-@media (min-width: 828px) and (max-width: 1440px) {
+@media (min-width: 828px) and (max-width: 1500px) {
   main .rectangleThree .three .restau a article {
     min-width: 162px;
   }
