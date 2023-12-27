@@ -37,7 +37,11 @@
 
 @keyframes dissapear {
     0% {opacity: 1;}
+<<<<<<< HEAD
     100%{opacity: 0; z-index: 0; visibility:hidden;}
+=======
+    100%{opacity: 0; z-index: 0; visibility: hidden;}
+>>>>>>> e61bfcd (visibility loader hidden)
 }
 
 h1 {
