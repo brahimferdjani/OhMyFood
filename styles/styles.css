@@ -56,25 +56,26 @@
     z-index: 0;
   }
 }
-.loader header {
+
+header {
   display: flex;
   flex-direction: column;
 }
-.loader header .logoHeader {
+header .logoHeader {
   max-width: 162px;
   margin: 14px auto;
 }
-.loader header .localisation {
+header .localisation {
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   padding: 15px 119px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
 }
-.loader header .localisation .fa-solid .fa-location-dot {
+header .localisation .fa-solid .fa-location-dot {
   font-size: 2em;
 }
-.loader header .localisation .input {
+header .localisation .input {
   background-color: transparent;
   border: none;
   text-align: center;
@@ -82,16 +83,17 @@
   font-size: 16px;
   outline: none;
 }
-.loader header .localisation .input::placeholder {
+header .localisation .input::placeholder {
   color: black;
 }
-.loader main .rectangleOne {
+
+main .rectangleOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
 }
-.loader main .rectangleOne h1 {
+main .rectangleOne h1 {
   padding: 39px 42px 0 58px;
   font-family: Roboto;
   font-size: 24px;
@@ -99,13 +101,13 @@
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  .loader main .rectangleOne h1 {
+  main .rectangleOne h1 {
     font-size: 40px;
     padding-top: 30px;
     padding-bottom: 18px;
   }
 }
-.loader main .rectangleOne p {
+main .rectangleOne p {
   padding: 12px 26px 27px 34px;
   font-family: Roboto;
   font-size: 18px;
@@ -113,12 +115,12 @@
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  .loader main .rectangleOne p {
+  main .rectangleOne p {
     padding-top: 0px;
     padding-bottom: 18px;
   }
 }
-.loader main .rectangleOne button {
+main .rectangleOne button {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -132,42 +134,42 @@
   margin-bottom: 75px;
   transition: 0.5s opacity;
 }
-.loader main .rectangleOne button:hover {
+main .rectangleOne button:hover {
   opacity: 0.8;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  .loader main .rectangleOne button {
+  main .rectangleOne button {
     margin-bottom: 30px;
   }
 }
-.loader main .rectangleTwo .two {
+main .rectangleTwo .two {
   padding: 50px 20px;
 }
 @media (min-width: 635px) and (max-width: 1500px) {
-  .loader main .rectangleTwo .two {
+  main .rectangleTwo .two {
     padding: 50px 180px;
   }
 }
-.loader main .rectangleTwo .two h1 {
+main .rectangleTwo .two h1 {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.loader main .rectangleTwo .two .boxe {
+main .rectangleTwo .two .boxe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1179px) and (max-width: 1500px) {
-  .loader main .rectangleTwo .two .boxe {
+  main .rectangleTwo .two .boxe {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     width: 100%;
   }
 }
-.loader main .rectangleTwo .two .boxe .boxes {
+main .rectangleTwo .two .boxe .boxes {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -179,7 +181,7 @@
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.loader main .rectangleTwo .two .boxe .boxes .number {
+main .rectangleTwo .two .boxe .boxes .number {
   position: absolute;
   border-radius: 20px;
   bottom: 27px;
@@ -192,28 +194,28 @@
   background-color: #9356DC;
   color: white;
 }
-.loader main .rectangleTwo .two .boxe .boxes .fa-solid {
+main .rectangleTwo .two .boxe .boxes .fa-solid {
   font-size: large;
   color: #7E7E7E;
 }
-.loader main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
+main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
   color: #9356DC;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  .loader main .rectangleTwo .two .boxe .boxes .fa-solid {
+  main .rectangleTwo .two .boxe .boxes .fa-solid {
     text-align: center;
   }
 }
-.loader main .rectangleTwo .two .boxe .boxes p {
+main .rectangleTwo .two .boxe .boxes p {
   text-align: left;
   font-size: 16px;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  .loader main .rectangleTwo .two .boxe .boxes {
+  main .rectangleTwo .two .boxe .boxes {
     gap: 15px;
   }
 }
-.loader main .rectangleThree {
+main .rectangleThree {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -221,29 +223,29 @@
   background-color: #F6F6F6;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  .loader main .rectangleThree .three {
+  main .rectangleThree .three {
     padding: 50px 180px;
   }
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  .loader main .rectangleThree .three {
+  main .rectangleThree .three {
     padding: 0 180px;
     margin-bottom: 30px;
   }
 }
-.loader main .rectangleThree .three h1 {
+main .rectangleThree .three h1 {
   padding: 54px 0 26px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  .loader main .rectangleThree .three h1 {
+  main .rectangleThree .three h1 {
     padding-top: 30px;
   }
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  .loader main .rectangleThree .three .restau {
+  main .rectangleThree .three .restau {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -251,77 +253,78 @@
     row-gap: 50px;
   }
 }
-.loader main .rectangleThree .three .restau a {
+main .rectangleThree .three .restau a {
   text-decoration: none;
   color: black;
 }
-.loader main .rectangleThree .three .restau a article {
+main .rectangleThree .three .restau a article {
   background-color: white;
   height: 100%;
   margin-bottom: 16px;
   border-radius: 15px;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  .loader main .rectangleThree .three .restau a article {
+  main .rectangleThree .three .restau a article {
     min-width: 162px;
   }
 }
-.loader main .rectangleThree .three .restau a article .images {
+main .rectangleThree .three .restau a article .images {
   position: relative;
 }
-.loader main .rectangleThree .three .restau a article .images p {
+main .rectangleThree .three .restau a article .images p {
   position: absolute;
   top: 10px;
   right: 20px;
   padding: 7px 9px;
   background-color: #99e2d0;
 }
-.loader main .rectangleThree .three .restau a article .images img {
+main .rectangleThree .three .restau a article .images img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-.loader main .rectangleThree .three .restau a article .content {
+main .rectangleThree .three .restau a article .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
   position: relative;
 }
-.loader main .rectangleThree .three .restau a article .content .description h2 {
+main .rectangleThree .three .restau a article .content .description h2 {
   font-size: 18px;
 }
-.loader main .rectangleThree .three .restau a article .content .description p {
+main .rectangleThree .three .restau a article .content .description p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   font-size: 17px;
 }
-.loader main .rectangleThree .three .restau a article .content .coeur {
+main .rectangleThree .three .restau a article .content .coeur {
   position: relative;
   margin-right: 1.5em;
   margin-bottom: 1em;
 }
-.loader main .rectangleThree .three .restau a article .content .coeur .cvide {
+main .rectangleThree .three .restau a article .content .coeur .cvide {
   position: absolute;
 }
-.loader main .rectangleThree .three .restau a article .content .coeur .cplein {
+main .rectangleThree .three .restau a article .content .coeur .cplein {
   visibility: hidden;
   position: absolute;
 }
-.loader main .rectangleThree .three .restau a article .content .coeur:hover .cplein {
+main .rectangleThree .three .restau a article .content .coeur:hover .cplein {
   visibility: visible;
 }
-.loader main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
+main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   visibility: hidden;
 }
-.loader .boxe2 {
+
+.boxe2 {
   padding: 10px;
   background-color: #353535;
 }
-.loader .boxe2 .boxeContent {
+.boxe2 .boxeContent {
   position: relative;
   padding: 15px;
   background-color: white;
@@ -329,7 +332,7 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.loader .boxe2 .boxeContent .repas h2 {
+.boxe2 .boxeContent .repas h2 {
   font-size: 18px;
   font-weight: 500;
   text-overflow: ellipsis;
@@ -339,7 +342,7 @@
   white-space: nowrap;
   transition: width 1s;
 }
-.loader .boxe2 .boxeContent .repas p {
+.boxe2 .boxeContent .repas p {
   text-overflow: ellipsis;
   /* ellipsis works with overflow hidden */
   overflow: hidden;
@@ -347,19 +350,19 @@
   font-size: 15.043px;
   transition: width 1s;
 }
-.loader .boxe2 .boxeContent .repas p span {
+.boxe2 .boxeContent .repas p span {
   float: right;
 }
-.loader .boxe2 .boxeContent:hover .check {
+.boxe2 .boxeContent:hover .check {
   right: 0;
 }
-.loader .boxe2 .boxeContent:hover h2 {
+.boxe2 .boxeContent:hover h2 {
   width: calc(100% - 80px);
 }
-.loader .boxe2 .boxeContent:hover p {
+.boxe2 .boxeContent:hover p {
   width: calc(100% - 80px);
 }
-.loader .boxe2 .check {
+.boxe2 .check {
   position: absolute;
   top: 0;
   right: -80px;
@@ -372,45 +375,46 @@
   justify-content: center;
   align-items: center;
 }
-.loader .boxe2 .check .fa-check {
+.boxe2 .check .fa-check {
   color: white;
   font-size: 2em;
 }
-.loader footer {
+
+footer {
   padding: 22px 25px;
   background-color: #353535;
   color: white;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  .loader footer {
+  footer {
     padding: 30px 25px;
     padding-top: 70px;
   }
 }
-.loader footer img {
+footer img {
   max-width: 162px;
   padding-bottom: 5px;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  .loader footer img {
+  footer img {
     float: right;
     margin-left: 80px;
   }
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  .loader footer .infos {
+  footer .infos {
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 20px;
     justify-content: flex-end;
   }
 }
-.loader footer .infos .sousinfos {
+footer .infos .sousinfos {
   display: grid;
   grid-template-columns: 15px auto;
   column-gap: 15px;
 }
-.loader footer div,
-.loader footer p {
+footer div,
+footer p {
   padding-bottom: 2px;
 }/*# sourceMappingURL=styles.css.map */
