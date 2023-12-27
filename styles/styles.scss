@@ -288,15 +288,6 @@ main {
                             min-width: 162px;
                         }
 
-                        img {
-
-                            width: 100%;
-                            height: 231px;
-                            object-fit: cover;
-                            border-top-right-radius: 15px;
-                            border-top-left-radius: 15px;
-
-                        }
 
                         .images {
 
@@ -308,6 +299,16 @@ main {
                                 right: 20px;
                                 padding: 7px 9px;
                                 background-color: $colorLightGreen;
+                            }
+
+                            img {
+
+                                width: 100%;
+                                height: 231px;
+                                object-fit: cover;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
+    
                             }
                         }
 
@@ -336,20 +337,19 @@ main {
                                 margin-right: 1.5em;
                                 margin-bottom: 1em;
 
-                                svg {
-                                    position: absolute;
-                                    inset: 0;
-                                }
+                                .cvide {position: absolute;}
 
-                                .vide:hover+.plein {
-                                    visibility: visible;
-                                }
-
-                                .plein {
+                                .cplein {
                                     visibility: hidden;
-                                    transform: scale(1.2);
+                                    position: absolute;
+                                }
+
+                                &:hover {
+                                    .cplein {visibility: visible;}
+                                    .cvide {visibility: hidden;}
                                 }
                             }
+
                         }
 
                     }
