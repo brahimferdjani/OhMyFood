@@ -24,6 +24,12 @@
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
 }
+@media (min-width: 1309px) and (max-width: 2000px) {
+  .loader .spin {
+    width: 65px;
+    height: 65px;
+  }
+}
 @keyframes loading {
   from {
     transform: rotate(0turn);
@@ -32,7 +38,14 @@
     transform: rotate(1turn);
   }
 }
-
+.loader .imageloader {
+  width: 80%;
+}
+@media (min-width: 500px) and (max-width: 2000px) {
+  .loader .imageloader {
+    width: 30%;
+  }
+}
 @keyframes dissapear {
   0% {
     opacity: 1;
@@ -43,25 +56,25 @@
     z-index: 0;
   }
 }
-header {
+.loader header {
   display: flex;
   flex-direction: column;
 }
-header .logoHeader {
+.loader header .logoHeader {
   max-width: 162px;
   margin: 14px auto;
 }
-header .localisation {
+.loader header .localisation {
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   padding: 15px 119px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
 }
-header .localisation .fa-solid .fa-location-dot {
+.loader header .localisation .fa-solid .fa-location-dot {
   font-size: 2em;
 }
-header .localisation .input {
+.loader header .localisation .input {
   background-color: transparent;
   border: none;
   text-align: center;
@@ -69,17 +82,16 @@ header .localisation .input {
   font-size: 16px;
   outline: none;
 }
-header .localisation .input::placeholder {
+.loader header .localisation .input::placeholder {
   color: black;
 }
-
-main .rectangleOne {
+.loader main .rectangleOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
 }
-main .rectangleOne h1 {
+.loader main .rectangleOne h1 {
   padding: 39px 42px 0 58px;
   font-family: Roboto;
   font-size: 24px;
@@ -87,13 +99,13 @@ main .rectangleOne h1 {
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  main .rectangleOne h1 {
+  .loader main .rectangleOne h1 {
     font-size: 40px;
     padding-top: 30px;
     padding-bottom: 18px;
   }
 }
-main .rectangleOne p {
+.loader main .rectangleOne p {
   padding: 12px 26px 27px 34px;
   font-family: Roboto;
   font-size: 18px;
@@ -101,12 +113,12 @@ main .rectangleOne p {
   text-align: center;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  main .rectangleOne p {
+  .loader main .rectangleOne p {
     padding-top: 0px;
     padding-bottom: 18px;
   }
 }
-main .rectangleOne button {
+.loader main .rectangleOne button {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -120,42 +132,42 @@ main .rectangleOne button {
   margin-bottom: 75px;
   transition: 0.5s opacity;
 }
-main .rectangleOne button:hover {
+.loader main .rectangleOne button:hover {
   opacity: 0.8;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  main .rectangleOne button {
+  .loader main .rectangleOne button {
     margin-bottom: 30px;
   }
 }
-main .rectangleTwo .two {
+.loader main .rectangleTwo .two {
   padding: 50px 20px;
 }
 @media (min-width: 635px) and (max-width: 1500px) {
-  main .rectangleTwo .two {
+  .loader main .rectangleTwo .two {
     padding: 50px 180px;
   }
 }
-main .rectangleTwo .two h1 {
+.loader main .rectangleTwo .two h1 {
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
 }
-main .rectangleTwo .two .boxe {
+.loader main .rectangleTwo .two .boxe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1179px) and (max-width: 1500px) {
-  main .rectangleTwo .two .boxe {
+  .loader main .rectangleTwo .two .boxe {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     width: 100%;
   }
 }
-main .rectangleTwo .two .boxe .boxes {
+.loader main .rectangleTwo .two .boxe .boxes {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -167,7 +179,7 @@ main .rectangleTwo .two .boxe .boxes {
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-main .rectangleTwo .two .boxe .boxes .number {
+.loader main .rectangleTwo .two .boxe .boxes .number {
   position: absolute;
   border-radius: 20px;
   bottom: 27px;
@@ -180,28 +192,28 @@ main .rectangleTwo .two .boxe .boxes .number {
   background-color: #9356DC;
   color: white;
 }
-main .rectangleTwo .two .boxe .boxes .fa-solid {
+.loader main .rectangleTwo .two .boxe .boxes .fa-solid {
   font-size: large;
   color: #7E7E7E;
 }
-main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
+.loader main .rectangleTwo .two .boxe .boxes .fa-solid:hover {
   color: #9356DC;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  main .rectangleTwo .two .boxe .boxes .fa-solid {
+  .loader main .rectangleTwo .two .boxe .boxes .fa-solid {
     text-align: center;
   }
 }
-main .rectangleTwo .two .boxe .boxes p {
+.loader main .rectangleTwo .two .boxe .boxes p {
   text-align: left;
   font-size: 16px;
 }
 @media (min-width: 426px) and (max-width: 1500px) {
-  main .rectangleTwo .two .boxe .boxes {
+  .loader main .rectangleTwo .two .boxe .boxes {
     gap: 15px;
   }
 }
-main .rectangleThree {
+.loader main .rectangleThree {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -209,29 +221,29 @@ main .rectangleThree {
   background-color: #F6F6F6;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three {
+  .loader main .rectangleThree .three {
     padding: 50px 180px;
   }
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three {
+  .loader main .rectangleThree .three {
     padding: 0 180px;
     margin-bottom: 30px;
   }
 }
-main .rectangleThree .three h1 {
+.loader main .rectangleThree .three h1 {
   padding: 54px 0 26px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three h1 {
+  .loader main .rectangleThree .three h1 {
     padding-top: 30px;
   }
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three .restau {
+  .loader main .rectangleThree .three .restau {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -239,78 +251,77 @@ main .rectangleThree .three h1 {
     row-gap: 50px;
   }
 }
-main .rectangleThree .three .restau a {
+.loader main .rectangleThree .three .restau a {
   text-decoration: none;
   color: black;
 }
-main .rectangleThree .three .restau a article {
+.loader main .rectangleThree .three .restau a article {
   background-color: white;
   height: 100%;
   margin-bottom: 16px;
   border-radius: 15px;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three .restau a article {
+  .loader main .rectangleThree .three .restau a article {
     min-width: 162px;
   }
 }
-main .rectangleThree .three .restau a article .images {
+.loader main .rectangleThree .three .restau a article .images {
   position: relative;
 }
-main .rectangleThree .three .restau a article .images p {
+.loader main .rectangleThree .three .restau a article .images p {
   position: absolute;
   top: 10px;
   right: 20px;
   padding: 7px 9px;
   background-color: #99e2d0;
 }
-main .rectangleThree .three .restau a article .images img {
+.loader main .rectangleThree .three .restau a article .images img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-main .rectangleThree .three .restau a article .content {
+.loader main .rectangleThree .three .restau a article .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
   position: relative;
 }
-main .rectangleThree .three .restau a article .content .description h2 {
+.loader main .rectangleThree .three .restau a article .content .description h2 {
   font-size: 18px;
 }
-main .rectangleThree .three .restau a article .content .description p {
+.loader main .rectangleThree .three .restau a article .content .description p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   font-size: 17px;
 }
-main .rectangleThree .three .restau a article .content .coeur {
+.loader main .rectangleThree .three .restau a article .content .coeur {
   position: relative;
   margin-right: 1.5em;
   margin-bottom: 1em;
 }
-main .rectangleThree .three .restau a article .content .coeur .cvide {
+.loader main .rectangleThree .three .restau a article .content .coeur .cvide {
   position: absolute;
 }
-main .rectangleThree .three .restau a article .content .coeur .cplein {
+.loader main .rectangleThree .three .restau a article .content .coeur .cplein {
   visibility: hidden;
   position: absolute;
 }
-main .rectangleThree .three .restau a article .content .coeur:hover .cplein {
+.loader main .rectangleThree .three .restau a article .content .coeur:hover .cplein {
   visibility: visible;
 }
-main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
+.loader main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   visibility: hidden;
 }
-
-.boxe2 {
+.loader .boxe2 {
   padding: 10px;
   background-color: #353535;
 }
-.boxe2 .boxeContent {
+.loader .boxe2 .boxeContent {
   position: relative;
   padding: 15px;
   background-color: white;
@@ -318,7 +329,7 @@ main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   border-radius: 20px;
   overflow: hidden;
 }
-.boxe2 .boxeContent .repas h2 {
+.loader .boxe2 .boxeContent .repas h2 {
   font-size: 18px;
   font-weight: 500;
   text-overflow: ellipsis;
@@ -328,7 +339,7 @@ main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   white-space: nowrap;
   transition: width 1s;
 }
-.boxe2 .boxeContent .repas p {
+.loader .boxe2 .boxeContent .repas p {
   text-overflow: ellipsis;
   /* ellipsis works with overflow hidden */
   overflow: hidden;
@@ -336,19 +347,19 @@ main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   font-size: 15.043px;
   transition: width 1s;
 }
-.boxe2 .boxeContent .repas p span {
+.loader .boxe2 .boxeContent .repas p span {
   float: right;
 }
-.boxe2 .boxeContent:hover .check {
+.loader .boxe2 .boxeContent:hover .check {
   right: 0;
 }
-.boxe2 .boxeContent:hover h2 {
+.loader .boxe2 .boxeContent:hover h2 {
   width: calc(100% - 80px);
 }
-.boxe2 .boxeContent:hover p {
+.loader .boxe2 .boxeContent:hover p {
   width: calc(100% - 80px);
 }
-.boxe2 .check {
+.loader .boxe2 .check {
   position: absolute;
   top: 0;
   right: -80px;
@@ -361,46 +372,45 @@ main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
   justify-content: center;
   align-items: center;
 }
-.boxe2 .check .fa-check {
+.loader .boxe2 .check .fa-check {
   color: white;
   font-size: 2em;
 }
-
-footer {
+.loader footer {
   padding: 22px 25px;
   background-color: #353535;
   color: white;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  footer {
+  .loader footer {
     padding: 30px 25px;
     padding-top: 70px;
   }
 }
-footer img {
+.loader footer img {
   max-width: 162px;
   padding-bottom: 5px;
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  footer img {
+  .loader footer img {
     float: right;
     margin-left: 80px;
   }
 }
 @media (min-width: 884px) and (max-width: 2000px) {
-  footer .infos {
+  .loader footer .infos {
     display: grid;
     grid-template-columns: repeat(4, auto);
     column-gap: 20px;
     justify-content: flex-end;
   }
 }
-footer .infos .sousinfos {
+.loader footer .infos .sousinfos {
   display: grid;
   grid-template-columns: 15px auto;
   column-gap: 15px;
 }
-footer div,
-footer p {
+.loader footer div,
+.loader footer p {
   padding-bottom: 2px;
 }/*# sourceMappingURL=styles.css.map */
