@@ -290,6 +290,7 @@ main .rectangleThree .three .restau .position a article .content {
 }
 main .rectangleThree .three .restau .position a article .content .description h2 {
   font-size: 18px;
+  padding-bottom: 5px;
 }
 main .rectangleThree .three .restau .position a article .content .description p {
   font-family: Roboto;
