@@ -117,6 +117,10 @@ main .banner {
     height: 300px;
   }
 }
+main section {
+  display: flex;
+  justify-content: center;
+}
 main section .background {
   background-color: #F6F6F6;
   width: 100%;
@@ -127,24 +131,25 @@ main section .background {
   position: relative;
   padding-bottom: 50px;
 }
-@media (min-width: 1300px) and (max-width: 2000px) {
+@media (min-width: 840px) and (max-width: 2000px) {
   main section .background {
     width: 70%;
-    left: 200px;
   }
 }
 main section .background .title {
   padding: 32px 17px 0 17px;
   display: grid;
-  grid-template-columns: 1fr 90px;
+  grid-template-columns: 1fr 50px;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
   margin-bottom: 40px;
   position: relative;
 }
-@media (min-width: 1309px) and (max-width: 2000px) {
+@media (min-width: 840px) and (max-width: 2000px) {
   main section .background .title {
     display: grid;
-    grid-template-columns: 30% 5%;
+    grid-template-columns: 50% 5%;
     justify-content: center;
   }
 }
@@ -177,17 +182,22 @@ main section .background .title .heart input[type=checkbox]:checked + label:afte
   transition: 0.5s ease;
 }
 main section .background article {
-  padding: 0 10px;
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: 1fr;
+  padding: 0 20px;
   row-gap: 12px;
   margin-bottom: 40px;
 }
-@media (min-width: 1309px) and (max-width: 2000px) {
+@media (min-width: 1130px) and (max-width: 2000px) {
   main section .background article {
     display: grid;
-    grid-template-columns: 50%;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 0 210px;
+  }
+}
+@media (min-width: 1130px) and (max-width: 2000px) and (min-width: 1130px) and (max-width: 840px) {
+  main section .background article {
+    padding: 0 110px;
   }
 }
 main section .background article h2 {
