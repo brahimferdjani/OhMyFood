@@ -253,78 +253,81 @@ main .rectangleThree .three h1 {
     row-gap: 50px;
   }
 }
-main .rectangleThree .three .restau a {
+main .rectangleThree .three .restau .position {
+  position: relative;
+}
+main .rectangleThree .three .restau .position a {
   text-decoration: none;
   color: black;
 }
-main .rectangleThree .three .restau a article {
+main .rectangleThree .three .restau .position a article {
   background-color: white;
   height: 100%;
   margin-bottom: 16px;
   border-radius: 15px;
 }
 @media (min-width: 828px) and (max-width: 1500px) {
-  main .rectangleThree .three .restau a article {
+  main .rectangleThree .three .restau .position a article {
     min-width: 162px;
   }
 }
-main .rectangleThree .three .restau a article .images {
+main .rectangleThree .three .restau .position a article .images {
   position: relative;
 }
-main .rectangleThree .three .restau a article .images p {
+main .rectangleThree .three .restau .position a article .images p {
   position: absolute;
   top: 10px;
   right: 20px;
   padding: 7px 9px;
   background-color: #99e2d0;
 }
-main .rectangleThree .three .restau a article .images img {
+main .rectangleThree .three .restau .position a article .images img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-main .rectangleThree .three .restau a article .content {
+main .rectangleThree .three .restau .position a article .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
   position: relative;
 }
-main .rectangleThree .three .restau a article .content .description h2 {
+main .rectangleThree .three .restau .position a article .content .description h2 {
   font-size: 18px;
 }
-main .rectangleThree .three .restau a article .content .description p {
+main .rectangleThree .three .restau .position a article .content .description p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   font-size: 17px;
 }
-main .rectangleThree .three .restau a article .content .heart {
-  position: relative;
-  right: 30px;
-  bottom: 15px;
+main .rectangleThree .three .restau .position .heart {
+  position: absolute;
+  right: 50px;
+  bottom: 55px;
 }
-main .rectangleThree .three .restau a article .content .heart input[type=checkbox] {
+main .rectangleThree .three .restau .position .heart input[type=checkbox] {
   display: none;
 }
-main .rectangleThree .three .restau a article .content .heart input[type=checkbox] + label {
+main .rectangleThree .three .restau .position .heart input[type=checkbox] + label {
   position: relative;
   display: inline-block;
   font-size: 16px;
 }
-main .rectangleThree .three .restau a article .content .heart input[type=checkbox] + label:before {
+main .rectangleThree .three .restau .position .heart input[type=checkbox] + label:before {
   content: url("../Images_et_textes_Ohmyfood/Card/Status=Default.png");
   position: absolute;
   transition: 0.5s ease;
   inset: 0;
 }
-main .rectangleThree .three .restau a article .content .heart input[type=checkbox]:checked + label:before {
+main .rectangleThree .three .restau .position .heart input[type=checkbox]:checked + label:before {
   border: 1px solid transparent;
   background-color: transparent;
 }
-main .rectangleThree .three .restau a article .content .heart input[type=checkbox]:checked + label:after {
+main .rectangleThree .three .restau .position .heart input[type=checkbox]:checked + label:after {
   content: url("../Images_et_textes_Ohmyfood/Card/Status=Liked.png");
   position: absolute;
   left: 1px;
