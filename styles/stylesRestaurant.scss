@@ -169,28 +169,39 @@ main {
                     justify-content: center;
                 }
 
-                .coeur {
+                .heart {
+
                     position: relative;
-                    margin-right: 1.5em;
-                    margin-bottom: 1em;
+                    bottom: 15px;
 
-                    .cvide {
-                        position: absolute;
+                    input[type="checkbox"] {
+                        display: none;
                     }
 
-                    .cplein {
-                        visibility: hidden;
-                        position: absolute;
+
+                    input[type="checkbox"]+label {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 16px;
                     }
 
-                    &:hover {
-                        .cplein {
-                            visibility: visible;
-                        }
+                    input[type="checkbox"]+label:before {
+                        content: url("../Images_et_textes_Ohmyfood/Card/Status=Default.png");
+                        position: absolute;
+                        transition: .5s ease;
+                        inset: 0;
+                    }
 
-                        .cvide {
-                            visibility: hidden;
-                        }
+                    input[type="checkbox"]:checked+label:before {
+                        border: 1px solid transparent;
+                        background-color: transparent;
+                    }
+
+                    input[type="checkbox"]:checked+label:after {
+                        content: url("../Images_et_textes_Ohmyfood/Card/Status=Liked.png");
+                        position: absolute;
+                        left: 1px;
+                        transition: .5s ease;
                     }
                 }
             }

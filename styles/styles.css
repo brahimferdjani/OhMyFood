@@ -17,8 +17,8 @@
   animation: dissapear 3s forwards 2s;
 }
 .loader .spin {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   border: 15px solid white;
   border-top-color: #99e2d0;
   border-radius: 50%;
@@ -301,23 +301,34 @@ main .rectangleThree .three .restau a article .content .description p {
   font-weight: 300;
   font-size: 17px;
 }
-main .rectangleThree .three .restau a article .content .coeur {
+main .rectangleThree .three .restau a article .content .heart {
   position: relative;
-  margin-right: 1.5em;
-  margin-bottom: 1em;
+  right: 30px;
+  bottom: 15px;
 }
-main .rectangleThree .three .restau a article .content .coeur .cvide {
+main .rectangleThree .three .restau a article .content .heart input[type=checkbox] {
+  display: none;
+}
+main .rectangleThree .three .restau a article .content .heart input[type=checkbox] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+}
+main .rectangleThree .three .restau a article .content .heart input[type=checkbox] + label:before {
+  content: url("../Images_et_textes_Ohmyfood/Card/Status=Default.png");
   position: absolute;
+  transition: 0.5s ease;
+  inset: 0;
 }
-main .rectangleThree .three .restau a article .content .coeur .cplein {
-  visibility: hidden;
+main .rectangleThree .three .restau a article .content .heart input[type=checkbox]:checked + label:before {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+main .rectangleThree .three .restau a article .content .heart input[type=checkbox]:checked + label:after {
+  content: url("../Images_et_textes_Ohmyfood/Card/Status=Liked.png");
   position: absolute;
-}
-main .rectangleThree .three .restau a article .content .coeur:hover .cplein {
-  visibility: visible;
-}
-main .rectangleThree .three .restau a article .content .coeur:hover .cvide {
-  visibility: hidden;
+  left: 1px;
+  transition: 0.5s ease;
 }
 
 .boxe2 {

@@ -148,23 +148,33 @@ main section .background .title {
     justify-content: center;
   }
 }
-main section .background .title .coeur {
+main section .background .title .heart {
   position: relative;
-  margin-right: 1.5em;
-  margin-bottom: 1em;
+  bottom: 15px;
 }
-main section .background .title .coeur .cvide {
+main section .background .title .heart input[type=checkbox] {
+  display: none;
+}
+main section .background .title .heart input[type=checkbox] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+}
+main section .background .title .heart input[type=checkbox] + label:before {
+  content: url("../Images_et_textes_Ohmyfood/Card/Status=Default.png");
   position: absolute;
+  transition: 0.5s ease;
+  inset: 0;
 }
-main section .background .title .coeur .cplein {
-  visibility: hidden;
+main section .background .title .heart input[type=checkbox]:checked + label:before {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+main section .background .title .heart input[type=checkbox]:checked + label:after {
+  content: url("../Images_et_textes_Ohmyfood/Card/Status=Liked.png");
   position: absolute;
-}
-main section .background .title .coeur:hover .cplein {
-  visibility: visible;
-}
-main section .background .title .coeur:hover .cvide {
-  visibility: hidden;
+  left: 1px;
+  transition: 0.5s ease;
 }
 main section .background article {
   padding: 0 10px;
