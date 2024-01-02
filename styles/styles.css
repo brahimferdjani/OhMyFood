@@ -421,6 +421,10 @@ footer .infos .sousinfos {
   grid-template-columns: 15px auto;
   column-gap: 15px;
 }
+footer .infos .contact {
+  color: white;
+  text-decoration: none;
+}
 footer div,
 footer p {
   padding-bottom: 2px;
